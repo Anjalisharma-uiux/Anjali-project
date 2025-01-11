@@ -1,0 +1,284 @@
+/*global styling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+h1{
+    font-size: 45px;
+    color: #323232;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+    color: #323232;
+}
+a{
+    text-decoration: none;
+}
+
+.ctr{
+    width: 100px;
+    padding: 8px 12px;
+    background: #323232;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.ctr:hover{
+    background: white;
+    border: 1px solid #323232;
+    color: #323232;
+    font-weight: bold;
+    
+}
+
+.container{
+    width: 80%;
+    margin: 60px auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.highlight{
+    color: brown;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    background: #FDA1A2;
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    border-radius: 50%;
+    z-index: -1;
+
+
+}
+/*navbar*/
+
+.navbar{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-list ul, .social-icons ul{
+    display: flex;
+
+}
+
+.nav-list ul li, .social-icons ul li{
+    margin: 0px 30px;
+    color: #323232;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo{
+    width: 90px;
+    
+}
+
+/* header */
+ .header{
+    margin-top: 0px;
+    height: 100vh;
+ }
+
+ .header .col-1{
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+ }
+
+ .header .col-2{
+    width: 100%;
+ }
+
+ .header .col-2 img{
+    max-width: 80%;
+
+ }
+ .header p{
+    margin: 30px auto;
+ }
+
+/* categories */
+
+.title{
+    
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px, auto));
+    grid-gap: 50px;
+}
+.icon-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.icon-title img{
+    margin-right: 20px;
+}
+.icon-title h2{
+    font-size: 20px;
+    color: #323232;
+}
+.grid-box .highlight{
+    color: #323232;
+    font-weight: bold;
+}
+.grid-box{
+    padding: 30px;
+}
+.categories .grid-box:hover{
+    box-shadow: 0px 0px 60px black;
+    border-radius: 20px;
+}
+
+/* videos */
+.videos{
+    margin-top: 150px;
+    position: relative;
+}
+.videos .title{
+    text-align: left;
+}
+.videos .title .ctn-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.ctn-title h4{
+    color:#FDA1A2;
+    cursor: pointer;
+}
+.videos .grid-wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 10px;
+
+
+}
+.rec-bg{
+    width: 700px;
+    height: 400px;
+    background: rgb(231, 222, 223);
+    top: -10%;
+    right: -20%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+.videos .grid-box{
+    position: relative;
+}
+.hover{
+    position:absolute;
+    top: 15%;
+    left: 15%;
+    width: 50%;
+    height: 50%;
+    background: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(20px);
+    color: whitesmoke;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+
+}
+.videos .grid-box:hover .hover {
+    transform: scaleX(1);
+}
+
+/* contact */
+.contact {
+    margin-top: 160px;
+}
+.contact .container{
+    text-align: center;
+    background: #e9f9ff;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+.contact .container h3{
+    margin: 40px;
+
+}
+
+.contact .fa{
+    margin-right: 40px;
+    color: green;
+    font-size: 30px;
+    
+}
+
+
+.contact .quick-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.contact .quick-links ul{
+    display: flex;
+}
+.contact .quick-links ul li {
+    margin: 0px 20px;
+    color: #323232;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.copytight .container{
+    color: #323232;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
